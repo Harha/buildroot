@@ -597,7 +597,6 @@ def check_package_latest_version(packages):
             pkg.status['version'] = ('error', "The newer version {} is available upstream".format(pkg.latest_version['version']))
         else:
             pkg.status['version'] = ('ok', 'up-to-date')
-
     worker_pool.terminate()
     del http_pool
 

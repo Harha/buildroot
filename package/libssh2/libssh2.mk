@@ -11,9 +11,6 @@ LIBSSH2_LICENSE_FILES = COPYING
 LIBSSH2_INSTALL_STAGING = YES
 LIBSSH2_CONF_OPTS = --disable-examples-build
 
-# 0003-packet-c-improve-message-parsing.patch
-LIBSSH2_IGNORE_CVES += CVE-2019-17498
-
 # building from a git clone
 LIBSSH2_AUTORECONF = YES
 

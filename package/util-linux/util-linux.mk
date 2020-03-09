@@ -38,10 +38,7 @@ UTIL_LINUX_CONF_OPTS += \
 HOST_UTIL_LINUX_DEPENDENCIES = host-pkgconf
 
 # We also don't want the host-python dependency
-HOST_UTIL_LINUX_CONF_OPTS = \
-	--without-systemd \
-	--with-systemdsystemunitdir=no \
-	--without-python
+HOST_UTIL_LINUX_CONF_OPTS = --without-python
 
 # Prevent the installation from attempting to move shared libraries from
 # ${usrlib_execdir} (/usr/lib) to ${libdir} (/lib), since both paths are
